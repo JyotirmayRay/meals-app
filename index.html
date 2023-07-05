@@ -1,0 +1,50 @@
+
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meals App</title>
+  <link href="@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Questrial&display=swap');" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id='nav-bar'>
+    <span class="logo" onclick="showMealList()">Meals App</span>
+    
+    
+    <div id="navs">
+      <ul id="nav-list">
+        <li onclick="showMealList()"><span>Home</span> </li>
+      </ul>
+    </div>
+    <div id="menu">
+      <div id="menu-items">
+        <img src="Assets/like.png" alt="..." onclick="showFavMealList()">
+      </div>
+      <div id="menu-items">
+      </div>
+      
+    </div>
+  </div>
+
+  <div id='main-container'>
+    <div id="inputs">
+      <input type='text'placeholder='Search here...' id="inputhere">
+      <button id="click" onclick="showMealList()"> Search</button>
+      <li onclick="showFavMealList()"> <span class="heart-icon"></span>
+      </li>
+    </div>
+    <h2 id="name"></h2>
+  </div>
+  <div id="display">
+  </div> 
+
+
+
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
